@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		500200C0299E427100C3EE42 /* TimerSingleTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500200BF299E427100C3EE42 /* TimerSingleTableController.swift */; };
+		502D8D7E29A8F8CC00A21976 /* RepeatAlarmChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D8D7D29A8F8CC00A21976 /* RepeatAlarmChoiceViewController.swift */; };
+		502D8D8029A8FD4000A21976 /* NameForAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D8D7F29A8FD4000A21976 /* NameForAlarmViewController.swift */; };
+		502D8D8229A8FD7B00A21976 /* SoundForNewAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D8D8129A8FD7B00A21976 /* SoundForNewAlarmViewController.swift */; };
+		5061F709299E88AB00F40817 /* SoundsTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5061F708299E88AB00F40817 /* SoundsTimerViewController.swift */; };
+		5061F70B299EFBF800F40817 /* PickerLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5061F70A299EFBF800F40817 /* PickerLabels.swift */; };
+		507483CE29A7AB5500E4B160 /* AlarmTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507483CD29A7AB5500E4B160 /* AlarmTabViewController.swift */; };
+		507483D029A7AB8100E4B160 /* SingleAlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507483CF29A7AB8100E4B160 /* SingleAlarmTableViewCell.swift */; };
+		507483D229A7ABB600E4B160 /* CreateNewAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507483D129A7ABB600E4B160 /* CreateNewAlarmViewController.swift */; };
+		509B998529A3F8AB0097C404 /* WorldTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509B998429A3F8AB0097C404 /* WorldTimeViewController.swift */; };
+		509B998729A3F9170097C404 /* TimeZonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509B998629A3F9170097C404 /* TimeZonesViewController.swift */; };
+		509B998929A3FAF30097C404 /* WorldTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509B998829A3FAF30097C404 /* WorldTimeTableViewCell.swift */; };
+		50B3937529994F1D00C444FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B3937429994F1D00C444FD /* AppDelegate.swift */; };
+		50B3937729994F1D00C444FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B3937629994F1D00C444FD /* SceneDelegate.swift */; };
+		50B3937929994F1D00C444FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B3937829994F1D00C444FD /* ViewController.swift */; };
+		50B3937C29994F1D00C444FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B3937A29994F1D00C444FD /* Main.storyboard */; };
+		50B3937E29994F1E00C444FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B3937D29994F1E00C444FD /* Assets.xcassets */; };
+		50B3938129994F1E00C444FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B3937F29994F1E00C444FD /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		500200BF299E427100C3EE42 /* TimerSingleTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSingleTableController.swift; sourceTree = "<group>"; };
+		502D8D7D29A8F8CC00A21976 /* RepeatAlarmChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatAlarmChoiceViewController.swift; sourceTree = "<group>"; };
+		502D8D7F29A8FD4000A21976 /* NameForAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameForAlarmViewController.swift; sourceTree = "<group>"; };
+		502D8D8129A8FD7B00A21976 /* SoundForNewAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundForNewAlarmViewController.swift; sourceTree = "<group>"; };
+		5061F708299E88AB00F40817 /* SoundsTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsTimerViewController.swift; sourceTree = "<group>"; };
+		5061F70A299EFBF800F40817 /* PickerLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerLabels.swift; sourceTree = "<group>"; };
+		507483CD29A7AB5500E4B160 /* AlarmTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTabViewController.swift; sourceTree = "<group>"; };
+		507483CF29A7AB8100E4B160 /* SingleAlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAlarmTableViewCell.swift; sourceTree = "<group>"; };
+		507483D129A7ABB600E4B160 /* CreateNewAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewAlarmViewController.swift; sourceTree = "<group>"; };
+		509B998429A3F8AB0097C404 /* WorldTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTimeViewController.swift; sourceTree = "<group>"; };
+		509B998629A3F9170097C404 /* TimeZonesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZonesViewController.swift; sourceTree = "<group>"; };
+		509B998829A3FAF30097C404 /* WorldTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTimeTableViewCell.swift; sourceTree = "<group>"; };
+		50B3937129994F1D00C444FD /* Godynnyk_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Godynnyk_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B3937429994F1D00C444FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50B3937629994F1D00C444FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		50B3937829994F1D00C444FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		50B3937B29994F1D00C444FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50B3937D29994F1E00C444FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50B3938029994F1E00C444FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		50B3938229994F1E00C444FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50B3936E29994F1D00C444FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		502D8D7C29A8F87600A21976 /* ParametrsToAlarmControllers */ = {
+			isa = PBXGroup;
+			children = (
+				502D8D7D29A8F8CC00A21976 /* RepeatAlarmChoiceViewController.swift */,
+				502D8D7F29A8FD4000A21976 /* NameForAlarmViewController.swift */,
+				502D8D8129A8FD7B00A21976 /* SoundForNewAlarmViewController.swift */,
+			);
+			path = ParametrsToAlarmControllers;
+			sourceTree = "<group>";
+		};
+		507483CC29A77A6000E4B160 /* AlarmControllers */ = {
+			isa = PBXGroup;
+			children = (
+				502D8D7C29A8F87600A21976 /* ParametrsToAlarmControllers */,
+				507483CD29A7AB5500E4B160 /* AlarmTabViewController.swift */,
+				507483D129A7ABB600E4B160 /* CreateNewAlarmViewController.swift */,
+				507483CF29A7AB8100E4B160 /* SingleAlarmTableViewCell.swift */,
+			);
+			path = AlarmControllers;
+			sourceTree = "<group>";
+		};
+		509B998329A3F8650097C404 /* WorldTimeControllers */ = {
+			isa = PBXGroup;
+			children = (
+				509B998429A3F8AB0097C404 /* WorldTimeViewController.swift */,
+				509B998629A3F9170097C404 /* TimeZonesViewController.swift */,
+				509B998829A3FAF30097C404 /* WorldTimeTableViewCell.swift */,
+			);
+			path = WorldTimeControllers;
+			sourceTree = "<group>";
+		};
+		50B3936829994F1D00C444FD = {
+			isa = PBXGroup;
+			children = (
+				50B3937329994F1D00C444FD /* Godynnyk_App */,
+				50B3937229994F1D00C444FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50B3937229994F1D00C444FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50B3937129994F1D00C444FD /* Godynnyk_App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50B3937329994F1D00C444FD /* Godynnyk_App */ = {
+			isa = PBXGroup;
+			children = (
+				509B998329A3F8650097C404 /* WorldTimeControllers */,
+				507483CC29A77A6000E4B160 /* AlarmControllers */,
+				50B3937429994F1D00C444FD /* AppDelegate.swift */,
+				50B3937629994F1D00C444FD /* SceneDelegate.swift */,
+				50B3937829994F1D00C444FD /* ViewController.swift */,
+				500200BF299E427100C3EE42 /* TimerSingleTableController.swift */,
+				5061F708299E88AB00F40817 /* SoundsTimerViewController.swift */,
+				5061F70A299EFBF800F40817 /* PickerLabels.swift */,
+				50B3937A29994F1D00C444FD /* Main.storyboard */,
+				50B3937D29994F1E00C444FD /* Assets.xcassets */,
+				50B3937F29994F1E00C444FD /* LaunchScreen.storyboard */,
+				50B3938229994F1E00C444FD /* Info.plist */,
+			);
+			path = Godynnyk_App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50B3937029994F1D00C444FD /* Godynnyk_App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50B3938529994F1E00C444FD /* Build configuration list for PBXNativeTarget "Godynnyk_App" */;
+			buildPhases = (
+				50B3936D29994F1D00C444FD /* Sources */,
+				50B3936E29994F1D00C444FD /* Frameworks */,
+				50B3936F29994F1D00C444FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Godynnyk_App;
+			productName = Godynnyk_App;
+			productReference = 50B3937129994F1D00C444FD /* Godynnyk_App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50B3936929994F1D00C444FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					50B3937029994F1D00C444FD = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 50B3936C29994F1D00C444FD /* Build configuration list for PBXProject "Godynnyk_App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50B3936829994F1D00C444FD;
+			productRefGroup = 50B3937229994F1D00C444FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50B3937029994F1D00C444FD /* Godynnyk_App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50B3936F29994F1D00C444FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B3938129994F1E00C444FD /* LaunchScreen.storyboard in Resources */,
+				50B3937E29994F1E00C444FD /* Assets.xcassets in Resources */,
+				50B3937C29994F1D00C444FD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50B3936D29994F1D00C444FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5061F70B299EFBF800F40817 /* PickerLabels.swift in Sources */,
+				5061F709299E88AB00F40817 /* SoundsTimerViewController.swift in Sources */,
+				502D8D8029A8FD4000A21976 /* NameForAlarmViewController.swift in Sources */,
+				507483D029A7AB8100E4B160 /* SingleAlarmTableViewCell.swift in Sources */,
+				507483CE29A7AB5500E4B160 /* AlarmTabViewController.swift in Sources */,
+				509B998529A3F8AB0097C404 /* WorldTimeViewController.swift in Sources */,
+				502D8D7E29A8F8CC00A21976 /* RepeatAlarmChoiceViewController.swift in Sources */,
+				500200C0299E427100C3EE42 /* TimerSingleTableController.swift in Sources */,
+				502D8D8229A8FD7B00A21976 /* SoundForNewAlarmViewController.swift in Sources */,
+				50B3937929994F1D00C444FD /* ViewController.swift in Sources */,
+				507483D229A7ABB600E4B160 /* CreateNewAlarmViewController.swift in Sources */,
+				509B998729A3F9170097C404 /* TimeZonesViewController.swift in Sources */,
+				50B3937529994F1D00C444FD /* AppDelegate.swift in Sources */,
+				50B3937729994F1D00C444FD /* SceneDelegate.swift in Sources */,
+				509B998929A3FAF30097C404 /* WorldTimeTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		50B3937A29994F1D00C444FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50B3937B29994F1D00C444FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		50B3937F29994F1E00C444FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50B3938029994F1E00C444FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50B3938329994F1E00C444FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50B3938429994F1E00C444FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50B3938629994F1E00C444FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6TQ6462CZP;
+				INFOPLIST_FILE = Godynnyk_App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "maksymoliiarnyk-nltu.lviv.ua.Godynnyk-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		50B3938729994F1E00C444FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6TQ6462CZP;
+				INFOPLIST_FILE = Godynnyk_App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "maksymoliiarnyk-nltu.lviv.ua.Godynnyk-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50B3936C29994F1D00C444FD /* Build configuration list for PBXProject "Godynnyk_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50B3938329994F1E00C444FD /* Debug */,
+				50B3938429994F1E00C444FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50B3938529994F1E00C444FD /* Build configuration list for PBXNativeTarget "Godynnyk_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50B3938629994F1E00C444FD /* Debug */,
+				50B3938729994F1E00C444FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50B3936929994F1D00C444FD /* Project object */;
+}

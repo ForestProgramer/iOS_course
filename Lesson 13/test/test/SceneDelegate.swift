@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  testssss
+//  test
 //
-//  Created by Максим Оліярник on 14.02.2023.
+//  Created by Максим Оліярник on 27.02.2023.
 //
 
 import UIKit

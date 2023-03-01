@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+// тут все так само як в классі RepeatAlarmChoice але тут вибрі може бути лише одного параметру
 protocol GetSound {
     func addSound(sound : String)
 }
@@ -17,9 +17,6 @@ class SoundForNewAlarmViewController: UIViewController {
     
     let alarmSounds : [String] = ["Радар(типовий)", "Апекс","Брижі","Відкриття","Вістка","Дозвілля","Збори","Космос","Кристали","Куранти","Мерехтіння","На пляжі","Опівнічник","Осяяння","Пагорб","Піднесення","Престо","Пробудження","Промені","Радіомаяк"]
     
-    
-    var cellSpotCheckmark : UITableViewCell!
-    var staticCounter : Int = 0
     
     var delegateSound : GetSound?
     override func viewDidLoad() {
@@ -51,7 +48,7 @@ extension SoundForNewAlarmViewController : UITableViewDelegate , UITableViewData
         delegateSound?.addSound(sound: selectedSound)
         
     }
-    
+    // функція викликається коли комірка не вибрана і тут ми забираємо наш чекмарк
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         tableView.cellForRow(at: indexPath)?.accessoryType = .none
     }

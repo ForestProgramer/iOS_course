@@ -134,7 +134,7 @@
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ukE-5I-bvW">
                                             <color key="tintColor" systemColor="systemOrangeColor"/>
                                             <connections>
-                                                <segue destination="ZdO-tp-nN3" kind="presentation" id="UzM-BK-b6X"/>
+                                                <segue destination="ZdO-tp-nN3" kind="presentation" identifier="modelAlarmSegue" id="UzM-BK-b6X"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -151,14 +151,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yal-4V-vdS">
-                                                    <rect key="frame" x="16" y="18" width="110" height="54"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yal-4V-vdS">
+                                                    <rect key="frame" x="16" y="18" width="0.0" height="54"/>
                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJc-6y-HC9">
-                                                    <rect key="frame" x="18" y="71" width="38" height="18"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJc-6y-HC9">
+                                                    <rect key="frame" x="18" y="71" width="0.0" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -322,6 +322,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Зберегти" id="chV-dh-TdW">
                             <color key="tintColor" systemColor="systemOrangeColor"/>
+                            <connections>
+                                <action selector="didTapSaveButton:" destination="poe-KU-bSQ" id="IK3-DR-Sr2"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -344,6 +347,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vwb-KA-gdR">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AlarmRepeatCell" textLabel="Xb6-bF-iFQ" style="IBUITableViewCellStyleDefault" id="ydo-ll-9OB" customClass="SingleAlarmTableViewCell" customModule="Godynnyk_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="24.5" width="375" height="43.5"/>
@@ -446,6 +450,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eE3-by-bBd">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SoundsNameCell" textLabel="SJx-5g-Y0C" style="IBUITableViewCellStyleDefault" id="1xF-Ua-SLa">
                                         <rect key="frame" x="0.0" y="24.5" width="375" height="43.5"/>
@@ -1101,6 +1106,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="XfJ-xF-aJ4"/>
                                     <constraint firstItem="M2a-gk-6kM" firstAttribute="leading" secondItem="sSv-kt-kYL" secondAttribute="leading" constant="15" id="df0-sO-DAI"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="M2a-gk-6kM" secondAttribute="trailing" constant="20" symbolic="YES" id="osr-uj-dyK"/>
                                     <constraint firstItem="M2a-gk-6kM" firstAttribute="centerY" secondItem="sSv-kt-kYL" secondAttribute="centerY" id="wxT-Jh-GKS"/>
                                 </constraints>
                             </view>
@@ -1577,6 +1583,9 @@
                                         <state key="normal" title="Скинути" backgroundImage="circle.fill" catalog="system">
                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="didTapResetButton:" destination="aNe-P7-SuV" eventType="touchUpInside" id="U0D-7E-OSr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5O-sf-hjy">
                                         <rect key="frame" x="269" y="12" width="93.5" height="88"/>
@@ -1585,6 +1594,9 @@
                                         <state key="normal" title="Пуск" backgroundImage="circle.fill" catalog="system">
                                             <color key="titleColor" systemColor="systemGreenColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="didTapStartStopButton:" destination="aNe-P7-SuV" eventType="touchUpInside" id="voO-Nu-ATi"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1602,20 +1614,42 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HlE-An-ddk">
-                                <rect key="frame" x="10" y="439.5" width="355" height="44"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="Oby-lr-wh7"/>
-                                </constraints>
+                                <rect key="frame" x="10" y="439.5" width="355" height="134.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Q12-gK-Hu8">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="Q12-gK-Hu8" customClass="ChosedSoundTableViewCell" customModule="Godynnyk_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="24.5" width="355" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q12-gK-Hu8" id="DnT-PN-KRz">
-                                            <rect key="frame" x="0.0" y="0.0" width="355" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="329.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="An5-1k-ZAa">
+                                                    <rect key="frame" x="16" y="11" width="149" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3h-8y-p2T">
+                                                    <rect key="frame" x="179" y="11" width="142.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.35956462517605808" green="0.35892968217464694" blue="0.39922664141414144" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="An5-1k-ZAa" firstAttribute="centerY" secondItem="T3h-8y-p2T" secondAttribute="centerY" id="80L-tA-z9x"/>
+                                                <constraint firstItem="T3h-8y-p2T" firstAttribute="baseline" secondItem="An5-1k-ZAa" secondAttribute="baseline" id="j9E-lO-NuH"/>
+                                                <constraint firstAttribute="trailing" secondItem="T3h-8y-p2T" secondAttribute="trailing" constant="8" id="p8C-ZL-fNg"/>
+                                                <constraint firstItem="T3h-8y-p2T" firstAttribute="leading" secondItem="An5-1k-ZAa" secondAttribute="trailing" constant="14" id="r51-Hp-gNh"/>
+                                            </constraints>
                                         </tableViewCellContentView>
-                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="0.16956313775510204" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="choosedSoundLabel" destination="T3h-8y-p2T" id="DsW-88-14w"/>
+                                            <outlet property="generalLabelChoose" destination="An5-1k-ZAa" id="tV8-xc-USD"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -1630,6 +1664,7 @@
                             <constraint firstAttribute="trailing" secondItem="HlE-An-ddk" secondAttribute="trailing" constant="10" id="Gc7-EV-Bh3"/>
                             <constraint firstItem="MTv-zr-KaF" firstAttribute="leading" secondItem="z7m-bF-dEV" secondAttribute="leading" id="KHP-Ek-2h0"/>
                             <constraint firstItem="HlE-An-ddk" firstAttribute="top" secondItem="MTv-zr-KaF" secondAttribute="bottom" id="KO0-Xe-woj"/>
+                            <constraint firstItem="z7m-bF-dEV" firstAttribute="bottom" secondItem="HlE-An-ddk" secondAttribute="bottom" id="NuX-Pi-oUI"/>
                             <constraint firstItem="F0m-HX-fhJ" firstAttribute="width" secondItem="z7m-bF-dEV" secondAttribute="width" id="YCG-iR-TM0"/>
                             <constraint firstItem="F0m-HX-fhJ" firstAttribute="leading" secondItem="z7m-bF-dEV" secondAttribute="leading" id="h6e-CT-SzM"/>
                             <constraint firstItem="HlE-An-ddk" firstAttribute="leading" secondItem="kf4-PD-Dwp" secondAttribute="leading" constant="10" id="hB3-5H-Jgs"/>
@@ -1646,6 +1681,8 @@
                     <connections>
                         <outlet property="pickerTimer" destination="F0m-HX-fhJ" id="PgO-lz-dYh"/>
                         <outlet property="singleTable" destination="HlE-An-ddk" id="t26-LP-OQP"/>
+                        <outlet property="timerResetButton" destination="aHl-hV-5hc" id="WpB-np-bjJ"/>
+                        <outlet property="timerStartStopButton" destination="C5O-sf-hjy" id="oaq-5V-Rs5"/>
                         <outlet property="viewTimer" destination="kf4-PD-Dwp" id="OTw-fH-pOX"/>
                     </connections>
                 </viewController>
@@ -1671,9 +1708,15 @@
                                     <navigationItem title="У кінці" id="CZA-ud-H75">
                                         <barButtonItem key="leftBarButtonItem" title="Скасувати" id="Gh3-7a-PsH">
                                             <color key="tintColor" systemColor="systemOrangeColor"/>
+                                            <connections>
+                                                <action selector="didTapCancelButton:" destination="6zu-rn-HbZ" id="LG9-ZS-2dW"/>
+                                            </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Задати" id="axT-EY-ChE">
                                             <color key="tintColor" systemColor="systemOrangeColor"/>
+                                            <connections>
+                                                <action selector="didTapSaveButton:" destination="6zu-rn-HbZ" id="kJk-xs-NXI"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -1681,24 +1724,27 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="mPN-Mz-QDA">
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.1043047664" green="0.1043047664" blue="0.1043047664" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexColor" systemColor="systemOrangeColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="jCZ-rS-iPv">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="HmT-Qp-ZHs" style="IBUITableViewCellStyleDefault" id="jCZ-rS-iPv">
                                         <rect key="frame" x="0.0" y="49.5" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jCZ-rS-iPv" id="xcs-va-n22">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HmT-Qp-ZHs">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="E1l-3G-Dp8">
-                                        <rect key="frame" x="0.0" y="93" width="375" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="E1l-3G-Dp8" id="ErO-CX-Ufq">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
@@ -1712,6 +1758,9 @@
                             <constraint firstItem="znO-JG-wYO" firstAttribute="leading" secondItem="OsO-yX-ohe" secondAttribute="leading" id="uZZ-hd-BgC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableSoundsForTimer" destination="mPN-Mz-QDA" id="5LQ-x3-FZl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r9T-3n-eMe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1885,7 +1934,7 @@
         <!--StopWatch-->
         <scene sceneID="BmA-xr-BFn">
             <objects>
-                <viewController id="mkA-32-aRF" userLabel="StopWatch" customClass="ViewController" customModule="Godynnyk_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mkA-32-aRF" userLabel="StopWatch" customClass="StopTimeWatchViewController" customModule="Godynnyk_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SXT-28-Vnd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1902,7 +1951,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qL6-xM-tqO">
                                         <rect key="frame" x="8" y="24" width="94" height="85.5"/>
                                         <color key="tintColor" white="0.12021962410000001" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="Коло" backgroundImage="circle.fill" catalog="system">
+                                        <state key="normal" title="На нуль" backgroundImage="circle.fill" catalog="system">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -1911,7 +1960,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCl-15-asv">
                                         <rect key="frame" x="273.5" y="24" width="93.5" height="85.5"/>
-                                        <color key="tintColor" red="0.035744060117502092" green="0.14328286082474229" blue="0.035262923920576325" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.035294117647058823" green="0.14509803921568626" blue="0.035294117647058823" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Старт" backgroundImage="circle.fill" catalog="system">
                                             <color key="titleColor" systemColor="systemGreenColor"/>
                                         </state>

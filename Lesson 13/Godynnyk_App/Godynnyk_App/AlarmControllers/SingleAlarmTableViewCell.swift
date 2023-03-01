@@ -6,9 +6,11 @@
 //
 
 import UIKit
-
+// клас кастомної комірки комірки
 class SingleAlarmTableViewCell: UITableViewCell {
-
+    
+    
+    //атлети зі сторіборда
     @IBOutlet weak var estimatedAlarmTime: UILabel!
     @IBOutlet weak var statusWhenRepeatLabel: UILabel!
     @IBOutlet weak var turnOfOnAlarmSwitcher: UISwitch!
@@ -18,6 +20,7 @@ class SingleAlarmTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -6,21 +6,23 @@
 //
 
 import UIKit
-
+// реалізований протокол для передавання параметру повторення
 protocol RepeatAlarm {
     func whenRepeat(days : [String])
 }
 
 class RepeatAlarmChoiceViewController: UIViewController {
-
+// аутлети таблиці з виборором парметрів
     @IBOutlet weak var tableRepeatAlarmChoice: UITableView!
+    // статичні данні
     let choicesRepeat : [String] = ["Щопонеділка","Щовівторка","Щосереди","Щочетверга","Щоп'ятниці","Щосуботи","Щонеділі"]
+    // массив для запису вибору парметра
     var daysToDisplay : [String] = []
-    
+    //змінна делегату
     var delegateRepeat : RepeatAlarm?
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // присвоїв делегати таблиці
         tableRepeatAlarmChoice.delegate = self
         tableRepeatAlarmChoice.dataSource = self
         // Do any additional setup after loading the view.
@@ -31,7 +33,7 @@ class RepeatAlarmChoiceViewController: UIViewController {
     
 
 }
-
+// роширення таблиці
 extension RepeatAlarmChoiceViewController : UITableViewDelegate , UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         choicesRepeat.count
@@ -43,7 +45,7 @@ extension RepeatAlarmChoiceViewController : UITableViewDelegate , UITableViewDat
         
         return cell
     }
-    
+    // при виборі комірки  передаєм  данні через делегат
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if tableView.cellForRow(at: indexPath)?.accessoryType == .checkmark{
             tableView.cellForRow(at: indexPath)?.accessoryType = .none

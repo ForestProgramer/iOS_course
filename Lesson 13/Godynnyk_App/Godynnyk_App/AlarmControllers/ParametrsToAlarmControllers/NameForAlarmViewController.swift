@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+// тут так само як і в попердньому класі просто тут текст фіелд делегат і при нажиманні кнопки ретурн ми  передаєм данні делегату
 protocol NameOfNewAlarm {
     func addNameAlarm(text : String)
 }
@@ -28,7 +28,12 @@ class NameForAlarmViewController: UIViewController {
 }
 
 extension NameForAlarmViewController : UITextFieldDelegate {
-    func textFieldDidEndEditing(_ textField: UITextField) {
+//    func textFieldDidEndEditing(_ textField: UITextField) {
+//
+//    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textFieldAlarmName.resignFirstResponder()
         delegateName?.addNameAlarm(text: textField.text!)
+        return true
     }
 }

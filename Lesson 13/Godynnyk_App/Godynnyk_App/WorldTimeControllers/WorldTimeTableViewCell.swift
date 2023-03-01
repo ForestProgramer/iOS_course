@@ -6,33 +6,34 @@
 //
 
 import UIKit
-
+// клас кастомної комірки таблиці
 class WorldTimeTableViewCell: UITableViewCell {
 
    
-
+// аутлети для всіх лейблів
     @IBOutlet weak var timeZoneName: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var currentTimeToOtherDifference: UILabel!
+    // і масив повних імен нашої таймзони
     var computedTimeZoneName : String!
     override func awakeFromNib( ) {
         super.awakeFromNib()
         // Initialization code
         
-        
+        // створили таймер з інтервалом 1 таргет наша комірка селектор викликає функцію де визначається час автоматично і і'мя таймзони
         let timerTime = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(setTime), userInfo: nil, repeats: true)
-        
+        // ця функція застована щоб при скролі таблиці в нас час не зупинявся
         RunLoop.current.add(timerTime, forMode: RunLoop.Mode.common)
     }
     
     
-    
+    // функція objc в якій присвоюється ім'я і час
     @objc func setTime(){
         timeLabel.text = getTime()
         currentTimeToOtherDifference.text = getDifference()
     }
     
-    
+    // функція яка автоматично визначає час за домопомогою дейтформатера і таймозни заданої її
     func getTime()->String{
         
         var timeString = ""
@@ -52,6 +53,7 @@ class WorldTimeTableViewCell: UITableViewCell {
     }
     
     //MARK: Look at this later
+    // ця функція важкіша і вона визначає різицю в часі між локальною таймзоною і таймзоною яку ми вибрали з таблиці
     func getDifference()->String{
         var differenceTime = ""
         if computedTimeZoneName != ""{
@@ -110,7 +112,8 @@ class WorldTimeTableViewCell: UITableViewCell {
     }
 
 }
-
+// розирення для класу дата (взяв з інтернету для того щоб визначати різницю між датами в годиннах і дивися чи дні в датах співпадають для того щоб написати Сьогодні Завтра або Учора як і оригінальному додатку)
+// Тут може виникнути тільки одна проблема якшо ми наприклад виберемо Токіо місто оскільки .date(from string : String) після того як воно кастить дату така як була але години зменшує на 2 години , ще не визначив чому так
 extension Date {
 
     /// Returns the amount of hours from another date

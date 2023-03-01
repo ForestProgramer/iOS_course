@@ -19,9 +19,10 @@
 		509B998529A3F8AB0097C404 /* WorldTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509B998429A3F8AB0097C404 /* WorldTimeViewController.swift */; };
 		509B998729A3F9170097C404 /* TimeZonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509B998629A3F9170097C404 /* TimeZonesViewController.swift */; };
 		509B998929A3FAF30097C404 /* WorldTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509B998829A3FAF30097C404 /* WorldTimeTableViewCell.swift */; };
+		509D9E8429AE189700C4074E /* ChosedSoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509D9E8329AE189700C4074E /* ChosedSoundTableViewCell.swift */; };
 		50B3937529994F1D00C444FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B3937429994F1D00C444FD /* AppDelegate.swift */; };
 		50B3937729994F1D00C444FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B3937629994F1D00C444FD /* SceneDelegate.swift */; };
-		50B3937929994F1D00C444FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B3937829994F1D00C444FD /* ViewController.swift */; };
+		50B3937929994F1D00C444FD /* StopTimeWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B3937829994F1D00C444FD /* StopTimeWatchViewController.swift */; };
 		50B3937C29994F1D00C444FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B3937A29994F1D00C444FD /* Main.storyboard */; };
 		50B3937E29994F1E00C444FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B3937D29994F1E00C444FD /* Assets.xcassets */; };
 		50B3938129994F1E00C444FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B3937F29994F1E00C444FD /* LaunchScreen.storyboard */; };
@@ -40,10 +41,11 @@
 		509B998429A3F8AB0097C404 /* WorldTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTimeViewController.swift; sourceTree = "<group>"; };
 		509B998629A3F9170097C404 /* TimeZonesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZonesViewController.swift; sourceTree = "<group>"; };
 		509B998829A3FAF30097C404 /* WorldTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTimeTableViewCell.swift; sourceTree = "<group>"; };
+		509D9E8329AE189700C4074E /* ChosedSoundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosedSoundTableViewCell.swift; sourceTree = "<group>"; };
 		50B3937129994F1D00C444FD /* Godynnyk_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Godynnyk_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B3937429994F1D00C444FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50B3937629994F1D00C444FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		50B3937829994F1D00C444FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		50B3937829994F1D00C444FD /* StopTimeWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopTimeWatchViewController.swift; sourceTree = "<group>"; };
 		50B3937B29994F1D00C444FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50B3937D29994F1E00C444FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50B3938029994F1E00C444FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +63,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		502C46D329AD359500E064D3 /* TimerControllers */ = {
+			isa = PBXGroup;
+			children = (
+				500200BF299E427100C3EE42 /* TimerSingleTableController.swift */,
+				5061F708299E88AB00F40817 /* SoundsTimerViewController.swift */,
+				509D9E8329AE189700C4074E /* ChosedSoundTableViewCell.swift */,
+			);
+			path = TimerControllers;
+			sourceTree = "<group>";
+		};
 		502D8D7C29A8F87600A21976 /* ParametrsToAlarmControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,11 +125,10 @@
 			children = (
 				509B998329A3F8650097C404 /* WorldTimeControllers */,
 				507483CC29A77A6000E4B160 /* AlarmControllers */,
+				50D4CA6829ACFDC500A0B53A /* StopWatchControllers */,
+				502C46D329AD359500E064D3 /* TimerControllers */,
 				50B3937429994F1D00C444FD /* AppDelegate.swift */,
 				50B3937629994F1D00C444FD /* SceneDelegate.swift */,
-				50B3937829994F1D00C444FD /* ViewController.swift */,
-				500200BF299E427100C3EE42 /* TimerSingleTableController.swift */,
-				5061F708299E88AB00F40817 /* SoundsTimerViewController.swift */,
 				5061F70A299EFBF800F40817 /* PickerLabels.swift */,
 				50B3937A29994F1D00C444FD /* Main.storyboard */,
 				50B3937D29994F1E00C444FD /* Assets.xcassets */,
@@ -125,6 +136,14 @@
 				50B3938229994F1E00C444FD /* Info.plist */,
 			);
 			path = Godynnyk_App;
+			sourceTree = "<group>";
+		};
+		50D4CA6829ACFDC500A0B53A /* StopWatchControllers */ = {
+			isa = PBXGroup;
+			children = (
+				50B3937829994F1D00C444FD /* StopTimeWatchViewController.swift */,
+			);
+			path = StopWatchControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,8 +225,9 @@
 				502D8D7E29A8F8CC00A21976 /* RepeatAlarmChoiceViewController.swift in Sources */,
 				500200C0299E427100C3EE42 /* TimerSingleTableController.swift in Sources */,
 				502D8D8229A8FD7B00A21976 /* SoundForNewAlarmViewController.swift in Sources */,
-				50B3937929994F1D00C444FD /* ViewController.swift in Sources */,
+				50B3937929994F1D00C444FD /* StopTimeWatchViewController.swift in Sources */,
 				507483D229A7ABB600E4B160 /* CreateNewAlarmViewController.swift in Sources */,
+				509D9E8429AE189700C4074E /* ChosedSoundTableViewCell.swift in Sources */,
 				509B998729A3F9170097C404 /* TimeZonesViewController.swift in Sources */,
 				50B3937529994F1D00C444FD /* AppDelegate.swift in Sources */,
 				50B3937729994F1D00C444FD /* SceneDelegate.swift in Sources */,

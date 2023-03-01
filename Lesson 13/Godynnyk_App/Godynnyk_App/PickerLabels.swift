@@ -9,8 +9,10 @@
 import Foundation
 import UIKit
 
-
-extension UIPickerView {
+// функція для додавання лейблів до компонентів  пікера (ЗАПУСКТИ ТІЛЬКИ НА IPHONE 12 PRO БО ЯКЩО НА ІНШИХ ТО БУДЕ БОЛЯЧЕ ДИВИТИСЬ)0))) ) ше пофікшу
+// НУ І НА РАХУНОК СТОРІБОРДУ ТО ТАМ ВПРИНЦИПІ ЯК НА ДРУГИЙ РАЗ НЕПОГАНО ЗРОБЛЕНІ КОНСТРЕЙТИ ПЛЮС НАВЧИВСЯ ЗАДАВАТИ СПІВВІДНОШЕННЯ В ПРОЦЕНТАХ ЩО НА МОЮ ДУМКУ Є ДУЖЕ КРУТО, ТОЖЕ ПОТІМ ПОФІКШУ
+//ЧЕКАЮ ФІДБЕКУ)))
+ extension UIPickerView {
    
     func setPickerLabels(labels: [Int:UILabel], containedView: UIView) { // [component number:label]
         
